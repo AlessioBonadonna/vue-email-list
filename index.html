@@ -16,8 +16,14 @@
 
     <title>vue email</title>
 </head>
-<body class="text-center">
-    ciao
+<body class="">
+    <div id="app">
+        <ol>
+            <li v-for="email in a">
+                {{ email }}
+            </li>
+        </ol>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 </html>
