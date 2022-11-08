@@ -21,7 +21,7 @@
         <nav><h2 class="text-primary">Email Random</h2></nav>
         
         <div class="mt-5">
-            <ul  v-if="a.length==10" class="list-group list-group-flush">
+            <ul  v-if="a.length>=10" class="list-group list-group-flush">
                 <li v-for="email in a">
                     {{ email }}
                 </li>
@@ -29,6 +29,7 @@
             
         </div>
         <button class="btn btn-secondary mt-3" @click="creaArrayRandom(a)" >aggiungi email</button> 
+
         <button class="btn btn-secondary mt-3 ms-3" @click="pulisciArray(a)">rigenera email</button>
     </div>
     <script src="./js/script.js"></script>
